@@ -1,0 +1,2 @@
+- [Guide to mappings in hibernate](https://thoughts-on-java.org/ultimate-guide-association-mappings-jpa-hibernate/)
+- code for the examples mentioned in the above link are pushed to the current repo under the folder (hibernate/src/main/java/learning/hibernate/relations)

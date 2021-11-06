@@ -1,0 +1,2 @@
+- [Composite key n hibernate](https://vladmihalcea.com/the-best-way-to-map-a-composite-primary-key-with-jpa-and-hibernate/)
+- code for the above link is present in the folder (hibernate/src/main/java/learning/hibernate/compositeKey)

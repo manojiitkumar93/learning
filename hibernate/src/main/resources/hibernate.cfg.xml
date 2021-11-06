@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<hibernate-configuration>
+ 
+<session-factory>
+ 
+<!-- Database Connection Settings -->
+ 
+<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+ 
+<property name="connection.url">jdbc:mysql://localhost:3306/hibernateLearning</property>
+ 
+<property name="connection.username">root</property>
+ 
+<property name="connection.password">Anjanna@41</property>
+ 
+<!-- Connection Pool Size (built-in) -->
+ 
+<property name="connection.pool.size">1</property>
+ 
+<!-- SQL Dialect -->
+ 
+<property name="dialect">org.hibernate.dialect.MySQL57Dialect</property>
+ 
+ 
+<!-- Disable the second-level cache -->
+ 
+<property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+ 
+<!-- Echo all executed SQL to stdout -->
+ 
+<property name="hibernate.show_sql">true</property>
+ 
+<!-- Drop the existing tables and create new one -->
+ 
+<property name="hbm2ddl.auto">create</property>
+ 
+<!-- Mention here all the model classes along with their package name -->
+
+<mapping class="learning.hibernate.compositeKey.Vehicle"/>
+<mapping class="learning.hibernate.compositeKey.User"/>
+<!-- <mapping class="learning.hibernate.inheritance.joined.Publication"/> -->
+ 
+<!-- <mapping class="learning.hibernate.UserInfo"/>
+<mapping class="learning.hibernate.cascade.User"/>
+<mapping class="learning.hibernate.cascade.Vehicle"/> 
+<mapping class="learning.hibernate.cascade.orphan.UserCascade"/>
+<mapping class="learning.hibernate.cascade.orphan.VehicleCascade"/>
+<mapping class="learning.hibernate.relations.manyToMany.User"/>
+<mapping class="learning.hibernate.relations.manyToMany.Vehicle"/>
+<mapping class="learning.hibernate.relations.oneToOne.User"/>
+<mapping class="learning.hibernate.relations.oneToOne.Vehicle"/>
+<mapping class="learning.hibernate.relations.manyToOne.User"/>
+<mapping class="learning.hibernate.relations.manyToOne.Vehicle"/>
+<mapping class="learning.hibernate.collections.StudentInfo"/>
+<mapping class="learning.hibernate.relations.manyToOne2.User"/>
+<mapping class="learning.hibernate.relations.manyToOne2.Vehicle"/> 
+<mapping class="learning.hibernate.inheritance.TwoWheeler"/>
+<mapping class="learning.hibernate.inheritance.FourWheeler"/>
+<mapping class="learning.hibernate.inheritance.Vehicle"/> 
+
+<mapping class="learning.hibernate.inheritance.tablePerClass.TwoWheeler"/>
+<mapping class="learning.hibernate.inheritance.tablePerClass.FourWheeler"/>
+<mapping class="learning.hibernate.inheritance.tablePerClass.Vehicle"/> -->
+ 
+<!--  <mapping class="learning.hibernate.inheritance.joined.TwoWheeler"/>
+<mapping class="learning.hibernate.inheritance.joined.FourWheeler"/>
+<mapping class="learning.hibernate.inheritance.joined.Vehicle"/> -->
+</session-factory>
+ 
+</hibernate-configuration>
