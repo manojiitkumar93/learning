@@ -82,6 +82,7 @@ later if corresponding row doesn’t exists in database, instead of failing imme
 - [HIbernate inheritance](https://www.baeldung.com/hibernate-inheritance)
 - [Hobernate inheritance](https://examples.javacodegeeks.com/hibernate-inheritance-mapping-example/)
 - [ACID](https://www.ibm.com/support/knowledgecenter/SSGMCP_5.4.0/product-overview/acid.html)
+- [All The Tutoria](https://examples.javacodegeeks.com/category/enterprise-java/hibernate/)
 
 
 
