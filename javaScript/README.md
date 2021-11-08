@@ -32,3 +32,14 @@ typeof Objects.keys(obj)[0];
 
 --> Meaning the value *function(){}* is internally stringified and considered as a string.
 ```
+
+* Four
+```
+var obj = {};
+obj[(function(){return 3;})()] = "hello";
+Objects.keys(obj)[0];
+
+--> Result : 3
+
+--> Meaning *(function(){return 3;})()* is an fucntion which is evaluated and returned *3*. Hence *3* i considered as a key here.
+```
