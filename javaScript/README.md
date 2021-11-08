@@ -58,3 +58,17 @@ manoj.length;
 --> Result : 1 
 --> Meaning array behaves as an object. By doing *manoj.hello*, we are actually adding one property the *manoj* object
 ```
+
+* Six
+```
+var manoj = [];
+manoj[1] = 123;
+manoj.length;
+
+--> Result : 2
+--> Meaning as we have directly defined 2 element of the array bu defualt the first element is undefined;
+
+manoj[0];
+
+--> Result : undefined
+```
