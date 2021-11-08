@@ -43,3 +43,18 @@ Objects.keys(obj)[0];
 
 --> Meaning *(function(){return 3;})()* is an fucntion which is evaluated and returned *3*. Hence *3* i considered as a key here.
 ```
+
+* Five
+```
+var manoj = [];
+manoj[0] = true;
+manoj.length;
+
+--> Result : 1
+
+manoj.hello = "hello";
+manoj.length;
+
+--> Result : 1 
+--> Meaning array behaves as an object. By doing *manoj.hello*, we are actually adding one property the *manoj* object
+```
