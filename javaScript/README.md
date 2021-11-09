@@ -72,3 +72,33 @@ manoj[0];
 
 --> Result : undefined
 ```
+
+* Seven
+```
+const [manoj, kumar] = [true, false];
+manoj
+--> Result : true
+kumar
+--> Result : false
+
+const [manoj, kumar] = [true];
+manoj
+--> Result : true
+kumar
+--> Result : undefined
+
+*const* --> Its like *final* keyword in java;
+```
+
+* Eight
+```
+const mano = true;
+mano = 1
+--> Result : Syntax error, meaning we are not allowed to do it as *mano* is defined as *const*
+
+const kumar = {first:1};
+kumar.first = 2;
+kumar.second = 3;
+kumar
+--> Result : {first:2, second:3}, meaning we are allowed to change the property values and add new properties.
+```
