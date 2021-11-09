@@ -72,8 +72,8 @@ manoj[0];
 
 --> Result : undefined
 ```
-
-* Seven
+#### ES6 Destructuring
+* one
 ```
 const [manoj, kumar] = [true, false];
 manoj
@@ -90,7 +90,7 @@ kumar
 *const* --> Its like *final* keyword in java;
 ```
 
-* Eight
+* Two
 ```
 const mano = true;
 mano = 1
@@ -101,4 +101,34 @@ kumar.first = 2;
 kumar.second = 3;
 kumar
 --> Result : {first:2, second:3}, meaning we are allowed to change the property values and add new properties.
+```
+
+* Three
+```
+({manoj, kumar} = {kumar:1, manoj:2});
+**Conditions : 
+    1) names in left should match with names in right
+manoj
+--> Result : 2
+kumar
+--> 1
+```
+* Four
+```
+({manoj, kumar} = {kumar:1, hello:2});
+manoj
+--> Result : undefined
+kumar
+--> Result : 1
+hello
+--> Result : Syntax error
+```
+* Five
+```
+obj = {manoj:1, kumar:2};
+({manoj,kumar} = obj);
+manoj
+--> Result : 1
+kumar
+--> Result = 2
 ```
