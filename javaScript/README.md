@@ -132,3 +132,11 @@ manoj
 kumar
 --> Result = 2
 ```
+* Six
+```
+[a, ...b] = [1,2,3]
+a
+--> Result : 1
+b
+--> Result : [2,3]
+```
